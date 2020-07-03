@@ -74,7 +74,7 @@ function GetCoordinates(e)
   PosY = PosY - ImgPos[1];
   if(PosX>90 && PosX<870 )
    {
-    Ni = Math.round((PosX-90)*398/780);
+    Ni = 10 + Math.round((PosX-90)*398/780);
     Ni=Ni+1;
     if(Ni<1) Ni=1;
     if(Ni>398) Ni=398;
